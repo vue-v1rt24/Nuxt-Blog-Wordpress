@@ -14,7 +14,6 @@ export const useWpApi = () => {
     let query = `posts?_embed&per_page=${perPage}&page=${page}`;
 
     if (categories) query += `&categories=${categories}`;
-    console.log(query);
 
     return await get<T>(query);
   };

@@ -1,0 +1,26 @@
+@import url(reset.css);
+
+/*  */
+
+body {
+  font-family: sans-serif;
+  color: black;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1920px;
+  box-sizing: content-box;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
